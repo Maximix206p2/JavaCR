@@ -20,15 +20,13 @@ public class Main {
                 break;
         }
         //2
-        int a = 1, d2 = 0, d3 = 0;
-        while (d2 + d3 != 10) {
-            if (a % 2 == 0) {
+        int d2 = 0, d3 = 0;
+        for (int i=0; i<11; i++) {
+            if (i % 2 == 0) {
                 d2++;
-                a++;
             }
-            else if (a % 3 == 0) {
+            else if (i % 3 == 0) {
                 d3++;
-                a++;
             }
         }
         System.out.printf("Делятся на 2: %d%nДелятся на 3: %d", d2, d3);
