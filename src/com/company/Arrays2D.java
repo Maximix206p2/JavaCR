@@ -1,7 +1,7 @@
 package com.company.Arrays;
 
 public class Arrays2D {
-    static int rows = 5, cols = 5;
+    static int rows = 5, cols = 6;
     static int[][] arr = new int[rows][cols];
 
     public static void main(String[] args) {
@@ -101,7 +101,16 @@ public class Arrays2D {
                 j = i;
                 i = 0;
             }
-            if (j==cols)
+        }
+        i=1; j=cols-1;
+        while (i < rows && j < cols && j >= 0) {
+            System.out.print(arr[i][j] + " ");
+            i++;
+            j--;
+            if (i==rows) {
+                j = cols-1;
+                i=j;
+            }
         }
     }
 }
