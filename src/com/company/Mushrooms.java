@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//regex – regular expression
 //Flyweight — легковес
 public class Mushrooms {
     public static void main(String[] args) {
