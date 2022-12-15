@@ -1,9 +1,61 @@
 package com.company;
 
-public class Person {
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import java.io.Serializable;
+import java.util.LinkedList;
+import java.util.List;
+
+//Сериализация для запоминания всего Объекта
+public class Person implements Serializable {
+    private int id;
+    private String name;
+
+    @XmlElementWrapper(name = "emails")
+    @XmlElement(name = "email")
+    private List<String> emails = new LinkedList<>();
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", emails=" + emails +
+                '}';
+    }
+
+    public Person(){}
+
+    public Person(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
 
-    private String name;
+    public List<String> getEmails() {
+        return emails;
+    }
+
+    public void addEmail(String email){
+        emails.add(email);
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmails(List<String> emails) {
+        this.emails = emails;
+    }
 }
