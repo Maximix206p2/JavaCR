@@ -13,5 +13,9 @@
 --Вывести топ 10 студентов и их средний балл
 --Количество студентов с одними пятерками 
 https://downloads.mysql.com/archives/community/
+"C:\Users\gk\Documents\mysql\bin\mysql.exe" -u root -p
+mysql> quit
+Bye
+C:\Users\gk>C:\Users\gk\Documents\mysql\bin\mysql.exe" -u max -p
 https://github.com/KirillovItstep/classworks/blob/main/students/students_mysql
 https://github.com/KirillovItstep/classworks/blob/main/web_sql/winkles.html
