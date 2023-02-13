@@ -1,0 +1,27 @@
+http://kodesource.top/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php
+
+--Напишите запрос в sql, чтобы отобразить id и имена менеджеров всех сотрудников.
+select e.name, e.manager_id
+from employer as e
+where (e.id=e.manager_id) and (e.id=e2.manager_id);
+
+--Напишите запрос в sql, чтобы перечислить всех сотрудников 2 и 3 классов.
+SELECT employees, salary
+from 
+WHERE job_name = 
+group by ;
+
+--Напишите запрос в sql, чтобы найти информацию о наиболее высокооплачиваемом сотруднике
+select e.name, i.name, e3.salary
+where (e.id=inv.character_id) and (i.id=inv.item_id) and (i.rarity=5);
+from character as c, item as i, inventory as inv
+
+--Напишите запрос в SQL, чтобы перечислить имена сотрудников, которые получают самую высокую зарплату в каждом отделе
+select e.name, i.name, e3.salary
+from character as c, item as i, inventory as inv
+where (e.id=inv.character_id) and (i.id=manager_id);
+
+--Напишите запрос в SQL, чтобы найти отдел, где нет сотрудников
+select e.name, e3.department_id
+from character as c, item as i, inventory as inv
+where (e.id=inv.character_id) and (i.id=e3.item_id);
