@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            --mask:
+                radial-gradient(223.61px at 50% calc(100% - 300.00px), #000 99%, #0000 101%) calc(50% - 200px) 0/400px 100%,
+                radial-gradient(223.61px at 50% calc(100% + 200.00px), #0000 99%, #000 101%) 50% calc(100% - 100px)/400px 100% repeat-x;
+            -webkit-mask: var(--mask);
+            mask: var(--mask);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.8;
+            filter: brightness(70%);
+            z-index: -1;
+            width: 960px;
+        }
+
+        .fa-dog {
+            color: red;
+        }
+
+        .puppi-font {
+            font-family: Kanit;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: -6px;
+        }
+
+        .input-search {
+            width: 100px;
+            display: inline;
+            outline: none;
+            padding: 2px;
+            margin-top: 4px;
+        }
+
+        .message{
+            color:white;
+            font-size:48px;
+            font-family: Kanit;
+            font-weight: 500;
+            margin:200px 0 0 50px;
+        }
+
+        .big{
+            font-family: Kanit;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .small{
+            font-family: Kanit;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .fa-clock{
+            color:red;
+        }
+
+    </style>
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="w3-bar" style="background-color: rgba(0,0,0,0); width:960px">
+        <div class="w3-bar-item puppi-font">&nbsp;<i class="fa-solid fa-dog"></i>&nbsp;
+            Puppi Care
+        </div>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+        <a href="#" class="w3-bar-item w3-button">Service</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">
+                Dropdown <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                <a href="#" class="w3-bar-item w3-button w3-text-black">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button w3-text-black">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button w3-text-black">Link 3</a>
+            </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+        <div class="w3-bar-item w3-right" style="padding:0; margin-right:50px">
+            <input class="w3-input w3-border w3-round-xxlarge input-search" type="text">
+            <a href="#" class="w3-button"><i class="fa fa-search"></i></a>
+        </div>
+        </div>
+    </header>
+    <div class=message>Make your dog looks<br/>their best</div>
+    <button class="w3-button w3-red w3-btn w3-round-xlarge" style="margin:10px 0 0 50px">Visit</button>
+
+    <!--Main-->
+    <div class="w3-container w3-blue" style="height:25vh; opacity:0"></div>
+        <div class="w3-container w3-row">
+                <div class="w3-col w3-padding-16 l5 m9 s12">
+                    <p class="big">How we can help you properly</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eveniet mollitia possimus.</p>
+                    <button class="w3-button w3-red w3-btn w3-round-xlarge" style="margin:10px 0 0 50px">Visit</button>
+                </div>
+                <div class="w3-col w3-padding-16 l2 m3 s16">
+                    <div class="w3-row w3-padding-8">
+                        <i class="fa-solid fa-notes-medical fa-lg"></i>
+                        <p class="small">Full diagnostic</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, beatae nemo? Tempora iure ad doloremque labore.</p>
+                    </div>
+                    <div class="w3-row w3-padding-8">
+                        <i class="fa-solid fa-award fa-lg"></i>
+                        <p class="small">Awarded services</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, beatae nemo? Tempora iure ad doloremque labore.</p>
+                    </div>
+                </div>
+                <div class="w3-col w3-padding-16 l2 m3 s16">
+                    <div class="w3-row w3-padding-8">
+                        <i class="fa-solid fa-paw fa-lg"></i>
+                        <i class="fa-regular fa-clock fa-3x"></i>
+                        <p class="small">Dog breeding</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, beatae nemo? Tempora iure ad doloremque labore.</p>
+                    </div>
+                    <div class="w3-row w3-padding-8">
+                        <i class="fa-solid fa-dumbbell fa-lg"></i>
+                        <p class="small">Dog training</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, beatae nemo? Tempora iure ad doloremque labore.</p>
+                    </div>
+                </div>
+        </div>
+
+    <img src="images/dog.webp" class="box w3-sepia-min"><br />
+
+    <img src="images/puppyCare.jpg" style="width:400px; margin-top:400px">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+</body>
+</html>
