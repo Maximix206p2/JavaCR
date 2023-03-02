@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="iE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 30%;
+            height: 50px;
+            margin: 10px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .static{
+            position: static;
+            background-color: rgb(99,83,32);
+            left: 100px;
+        }
+
+        .relative{
+            position: relative;
+            background-color: rgb(107,162,209);
+            left:50px;
+            top:30px;
+        }
+
+        .fixed{
+            position: fixed;
+            background-color: rgb(46,189,165);
+            /*left:100px;
+            top:50px;*/
+            bottom:0;
+            right:0;
+        }
+
+        .absolute{
+            position: absolute;
+            background-color: rgb(182, 199, 33);
+            bottom: 0;
+            left: 0;
+        }
+
+        .sticky{
+            position: sticky;
+            background-color: rgb(199,33,149);
+            top: 10px;
+            left:10px;
+        }
+
+        td{
+            width:30%;
+        }
+        
+        table{
+            width:200%;
+            overflow-x:scroll;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="static">Static div 1<br>line 2</div>
+    <div class="static">Static div 2</div>
+
+    <div class="relative">Relative div 1</div>
+    <div class="relative">Relative div 2</div>
+
+    <p>sdjfkl sdjfkls sdjfklsdjflksdj sdlkfj lskdf sdlkfj loryyaasl;dfk windmill sdifjloij</p>
+    <div class="fixed">Fixed div 1</div>
+    <div class="absolute">Absolute div 1</div>
+
+    <div class="sticky">Sticky div 1</div>
+
+    <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+    <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+    <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+    <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+    <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+    <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+
+    <table>
+        <tr>
+            <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+        </tr>
+    </table> 
+</body>
+</html>
