@@ -15,4 +15,4 @@ https://andreibaptista.medium.com/choosing-between-hibernate-and-mybatis-a-guide
 mybatis https://github.com/KirillovItstep/mybatis
 
 tailwind (?)
-flyway
+flyway - для перехода проекта на другую версию https://github.com/KirillovItstep/spring-flyway
